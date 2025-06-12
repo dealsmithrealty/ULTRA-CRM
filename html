@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ULTRA CRM Pricing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f7f8fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1rem;
+    }
+    .stripe-container {
+      width: 100%;
+      max-width: 900px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choose Your ULTRA CRM Plan</h1>
+  <p>All plans include a branded CRM, lead management, and custom tools designed for real estate investors. Pick the level of automation that fits your business best.</p>
+
+  <div class="stripe-container">
+    <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+    <stripe-pricing-table 
+      pricing-table-id="prctbl_1RZHMT2pyUJqZRKsBjNEfpoU"
+      publishable-key="pk_live_51Nb6XN2pyUJqZRKsc3zkTgP5LAHIjlVdG7JYYeNhbZDlnh9KNcxsWWuwzbmJiK6ylItA6LFXhTfbJJtxfneSORa500o0cLk7aH">
+    </stripe-pricing-table>
+  </div>
+</body>
+</html>
